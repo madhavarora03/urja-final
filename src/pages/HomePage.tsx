@@ -87,15 +87,14 @@ export default function HomePage() {
               </p>
             </p>
           </div>
-          <div>
-            <video src={Model} className='' controls autoPlay />
+          <div className='w-2/5'>
+            <video src={Model} className='' autoPlay loop />
           </div>
         </div>
       </MotionDiv>
       <MotionDiv
         style='slide-up'
         className='h-[calc(100dvh-7.5dvw-1rem)] pl-14'
-        id='features'
       >
         <h1 className='py-10 text-7xl tracking-tighter flex items-center justify-between pr-14'>
           <p>Key Features</p>
@@ -237,10 +236,23 @@ export default function HomePage() {
         </h1>
         <div className='flex w-full items-center justify-evenly h-[calc(100%-9.5rem)]'>
           <div className=' max-w-[50%]'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo at
-            rem inventore eveniet veniam dignissimos maxime, corrupti provident
-            earum non id ducimus numquam unde aut ratione veritatis quaerat.
-            Voluptatem, harum?
+            <p className='text-lg'>
+              At SOLARBREEZE, we are a team of five passionate individuals
+              dedicated to combating the pressing issue of air pollution through
+              innovative solutions. Our project, aptly named SOLARBREEZE,
+              harnesses the power of Vertical Axis Wind Turbines (VAWT) to
+              tackle air pollution head-on.
+            </p>
+            <h1 className='text-2xl pt-8 pb-2 underline underline-offset-8'>
+              Our Mission
+            </h1>
+            <p className='text-lg'>
+              Our mission is clear: to create a cleaner, healthier environment
+              for current and future generations by reducing air pollution
+              levels through sustainable technology. We believe that everyone
+              deserves access to clean air, and we are committed to making this
+              vision a reality.
+            </p>
           </div>
           <img src={Team} alt='' className='h-96 rounded-xl' />
         </div>

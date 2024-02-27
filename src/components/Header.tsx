@@ -22,6 +22,10 @@ export default function Header() {
       name: 'About Us',
       link: '#about',
     },
+    {
+      name: 'Contact Us',
+      link: '/contact',
+    },
   ];
 
   useEffect(() => {
