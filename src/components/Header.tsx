@@ -8,23 +8,19 @@ export default function Header() {
   const navLinks = [
     {
       name: 'Home',
-      link: '/',
-    },
-    {
-      name: 'Features',
-      link: '/features',
-    },
-    {
-      name: 'About Us',
-      link: '/about',
+      link: '#',
     },
     {
       name: 'Product',
-      link: '/product',
+      link: '#product',
     },
     {
-      name: 'Contact Us',
-      link: '/contact',
+      name: 'Features',
+      link: '#features',
+    },
+    {
+      name: 'About Us',
+      link: '#about',
     },
   ];
 
@@ -63,7 +59,7 @@ export default function Header() {
       </Link>
       <nav className='gap-[2dvw] flex'>
         {navLinks.map((link, index) => (
-          <Link to={link.link} key={index}>
+          <a href={link.link} key={index}>
             <p
               className={`text-[1.35dvw] ${
                 scrolled ? 'text-slate-800' : 'text-white'
@@ -71,7 +67,7 @@ export default function Header() {
             >
               {link.name}
             </p>
-          </Link>
+          </a>
         ))}
       </nav>
     </header>

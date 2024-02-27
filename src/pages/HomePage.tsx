@@ -1,5 +1,8 @@
 import Hawa from '../assets/hawa.jpeg';
 import MotionDiv from '../components/MotionDiv';
+import Team from '../assets/about.jpg';
+import Box from '../assets/box-indicating-points.svg';
+import Model from '../assets/cfd.mp4';
 
 export default function HomePage() {
   return (
@@ -21,7 +24,78 @@ export default function HomePage() {
       </div>
       <MotionDiv
         style='slide-up'
+        className='pb-12 bg-[url("/src/assets/bg-elem.svg")] bg-cover bg-fixed bg-center px-14'
+      >
+        <h1 className='py-10 text-7xl tracking-tighter relative underline-offset-[12px]'>
+          <p className='blur-md scale-y-105'>Our Product</p>
+          <span className='absolute left-0 top-[2.5rem] underline'>
+            Our Product
+          </span>
+        </h1>
+        <p className='-translate-y-6'>
+          An initiative that aims to upcycle the unused wind energy, upscale our
+          developed products and uplift communities.
+        </p>
+        <div className='flex items-center justify-around'>
+          <div className='max-w-[40%] space-y-6'>
+            <p className='flex items-center'>
+              <img src={Box} className='mr-4' width={20} />
+              <p>
+                SOLARBREEZE is making a great stride toward goal 7 (affordable
+                and clean energy) of UNSD (United Nations Sustainable
+                Development) and envisioning a sustainable
+              </p>
+            </p>
+            <p className='flex items-center'>
+              <img src={Box} className='mr-4' width={20} />
+              <p>
+                Project SOLARBREEZE quintessentially tackles daunting issues
+                that torment our planet and bring about adverse climate changes.
+              </p>
+            </p>
+            <p className='flex items-center'>
+              <img src={Box} className='mr-4' width={20} />
+              <p>
+                It is not just conserving energy but its remarkable product is
+                also giving electricity back to the grid which doesn't just
+                reduce CO2 emissions but also generates revenue.
+              </p>
+            </p>
+            <p className='flex items-center'>
+              <img src={Box} className='mr-4' width={20} />
+              <p>
+                We are efficiently minimizing wasted car fuel and using the
+                generated air currents clubbed with the natural wind to power
+                our innovative product.
+              </p>
+            </p>
+            <p className='flex items-center'>
+              <img src={Box} className='mr-4' width={20} />
+              <p>
+                Not just wind energy but SOLARBREEZE through its installed solar
+                panel utilizes Solar energy as well. By combining both wind and
+                solar, our project aims to electrify the product throughout the
+                year, even in adverse conditions.
+              </p>
+            </p>
+            <p className='flex items-center'>
+              <img src={Box} className='mr-4' width={20} />
+              <p>
+                We aim to impact people from multiple facets of life, we aspire
+                to connect our beneficiaries with the government who is
+                collaborating with us on this revolutionary project.
+              </p>
+            </p>
+          </div>
+          <div>
+            <video src={Model} className='' controls autoPlay />
+          </div>
+        </div>
+      </MotionDiv>
+      <MotionDiv
+        style='slide-up'
         className='h-[calc(100dvh-7.5dvw-1rem)] pl-14'
+        id='features'
       >
         <h1 className='py-10 text-7xl tracking-tighter flex items-center justify-between pr-14'>
           <p>Key Features</p>
@@ -157,7 +231,20 @@ export default function HomePage() {
           </div>
         </div>
       </MotionDiv>
-      {/* <div className='h-[calc(100dvh-7.5dvw-1rem)]'></div> */}
+      <div className='h-[calc(100dvh-7.5dvw-1rem)] bg-[#81865E]'>
+        <h1 className='flex w-full items-center justify-center text-7xl font-medium py-10 tracking-tighter bg-black text-white'>
+          About Us
+        </h1>
+        <div className='flex w-full items-center justify-evenly h-[calc(100%-9.5rem)]'>
+          <div className=' max-w-[50%]'>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo at
+            rem inventore eveniet veniam dignissimos maxime, corrupti provident
+            earum non id ducimus numquam unde aut ratione veritatis quaerat.
+            Voluptatem, harum?
+          </div>
+          <img src={Team} alt='' className='h-96 rounded-xl' />
+        </div>
+      </div>
     </MotionDiv>
   );
 }
